@@ -1,0 +1,320 @@
+:root {
+    --bg-dark: #0a0a0c;
+    --card-bg: #141418;
+    --accent: #ff4500;
+    --accent-hover: #ff6a00;
+    --text-light: #ffffff;
+    --text-gray: #a0a0ab;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(10, 10, 12, 0.85);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    border-bottom: 1px solid rgba(255, 69, 0, 0.2);
+}
+
+.logo {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 28px;
+    font-weight: 800;
+    color: var(--text-light);
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+.logo span {
+    color: var(--accent);
+}
+
+nav a {
+    color: var(--text-light);
+    text-decoration: none;
+    margin-left: 30px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: var(--accent);
+}
+
+.hero {
+    height: 100vh;
+    background: linear-gradient(to right, rgba(10, 10, 12, 0.9) 35%, rgba(10, 10, 12, 0.3)), 
+                url('https://unsplash.com') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    padding: 0 8%;
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.hero-content h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 56px;
+    line-height: 1.1;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.hero-content h1 span {
+    color: var(--accent);
+    text-shadow: 0 0 20px rgba(255, 69, 0, 0.6);
+}
+
+.hero-content p {
+    color: var(--text-gray);
+    font-size: 18px;
+    margin-bottom: 35px;
+    line-height: 1.6;
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px 38px;
+    background: var(--accent);
+    color: var(--text-light);
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.3s;
+    box-shadow: 0 0 20px rgba(255, 69, 0, 0.4);
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: var(--accent-hover);
+    transform: translateY(-3px);
+    box-shadow: 0 0 30px rgba(255, 69, 0, 0.8);
+}
+
+.section {
+    padding: 100px 8%;
+}
+
+.section-title {
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 36px;
+    margin-bottom: 60px;
+    text-transform: uppercase;
+}
+
+.section-title span {
+    color: var(--accent);
+}
+
+.moto-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 35px;
+}
+
+.moto-card {
+    background: var(--card-bg);
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: 0.4s;
+    position: relative;
+}
+
+.moto-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--accent);
+    box-shadow: 0 10px 30px rgba(255, 69, 0, 0.2);
+}
+
+.moto-card img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    transition: 0.4s;
+}
+
+.moto-card:hover img {
+    transform: scale(1.05);
+}
+
+.card-body {
+    padding: 25px;
+}
+
+.card-body h3 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.specs {
+    display: flex;
+    justify-content: space-between;
+    color: var(--text-gray);
+    font-size: 14px;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.price-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price {
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--accent);
+}
+
+.buy-btn {
+    padding: 10px 20px;
+    background: transparent;
+    border: 1px solid var(--accent);
+    color: var(--text-light);
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.buy-btn:hover {
+    background: var(--accent);
+}
+
+.features {
+    background: #0f0f13;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    padding: 80px 8%;
+    text-align: center;
+}
+
+.feature-box {
+    padding: 30px;
+    background: var(--card-bg);
+    border-radius: 10px;
+    border-bottom: 3px solid var(--accent);
+}
+
+.feature-box h4 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: var(--accent);
+}
+
+.feature-box p {
+    color: var(--text-gray);
+    font-size: 14px;
+}
+
+/* Sof CSS Modal */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s;
+}
+
+.modal:target {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modal-content {
+    background: var(--card-bg);
+    padding: 40px;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 450px;
+    border: 1px solid var(--accent);
+    position: relative;
+}
+
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 28px;
+    text-decoration: none;
+    color: var(--text-gray);
+    line-height: 1;
+}
+
+.close-btn:hover {
+    color: var(--accent);
+}
+
+.modal-content h2 {
+    font-family: 'Orbitron', sans-serif;
+    margin-bottom: 10px;
+    color: var(--accent);
+}
+
+.modal-content input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    background: #0a0a0c;
+    border: 1px solid #333;
+    color: #fff;
+    border-radius: 5px;
+    outline: none;
+}
+
+.modal-content input:focus {
+    border-color: var(--accent);
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    background: #070709;
+    color: var(--text-gray);
+    font-size: 14px;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+@media (max-width: 768px) {
+    .hero-content h1 { font-size: 38px; }
+    nav { display: none; }
+}

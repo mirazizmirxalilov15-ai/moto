@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOTO-X | Tezlik va Kuch Dunyosi</title>
+    <link href="https://googleapis.com" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <a href="#" class="logo">MOTO<span>-X</span></a>
+        <nav>
+            <a href="#home">Bosh sahifa</a>
+            <a href="#models">Modellar</a>
+            <a href="#features">Afzalliklar</a>
+            <a href="#contact">Aloqa</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Chegarasiz <span>Tezlik</span> Va Erkinlik</h1>
+            <p>Eng zamonaviy sport va shahar mototsikllari. Yo'llarda o'z hukmronligingizni o'rnating va haqiqiy adrenalinni his qiling.</p>
+            <a href="#models" class="btn">Modellarni ko'rish</a>
+        </div>
+    </section>
+
+    <section class="section" id="models">
+        <h2 class="section-title">Top <span>Modellar</span></h2>
+        <div class="moto-grid">
+            
+            <div class="moto-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaVxSvtnA8nCyrqzfqmZ4hXNOsxxqKPqZAkOhmDfOtJA&s=10" alt="Kawasaki Ninja">
+                <div class="card-body">
+                    <h3>Kawasaki Ninja H2R</h3>
+                    <div class="specs">
+                        <span>⚡ 310 ot kuchi</span>
+                        <span>🚀 400 km/soat</span>
+                        <span>⚙️ 998 cc</span>
+                    </div>
+                    <div class="price-row">
+                        <span class="price">$55,000</span>
+                        <a href="#order-modal" class="buy-btn">Buyurtma</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="moto-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRraxye4QFCyjjY-HZiCiGhMaSWjN76GPXY8E7hdKEhVA&s=10" alt="Ducati Panigale">
+                <div class="card-body">
+                    <h3>Ducati Panigale V4</h3>
+                    <div class="specs">
+                        <span>⚡ 214 ot kuchi</span>
+                        <span>🚀 305 km/soat</span>
+                        <span>⚙️ 1103 cc</span>
+                    </div>
+                    <div class="price-row">
+                        <span class="price">$28,500</span>
+                        <a href="#order-modal" class="buy-btn">Buyurtma</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="moto-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMEsWVpfppan0xdo-T260NhFxDQNMHJOhUoTBSwzKUdg&s=10" alt="Yamaha R1">
+                <div class="card-body">
+                    <h3>Yamaha YZF-R1M</h3>
+                    <div class="specs">
+                        <span>⚡ 200 ot kuchi</span>
+                        <span>🚀 299 km/soat</span>
+                        <span>⚙️ 998 cc</span>
+                    </div>
+                    <div class="price-row">
+                        <span class="price">$26,000</span>
+                        <a href="#order-modal" class="buy-btn">Buyurtma</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="features" id="features">
+        <div class="feature-box">
+            <h4>2 Yil Kafolat</h4>
+            <p>Barcha mototsikllarimizga rasmiy servis va ehtiyot qismlar kafolati beriladi.</p>
+        </div>
+        <div class="feature-box">
+            <h4>Tezkor Yetkazish</h4>
+            <p>O'zbekistonning barcha viloyatlariga maxsus xavfsiz transportda yetkazib beramiz.</p>
+        </div>
+        <div class="feature-box">
+            <h4>Bo'lib To'lash</h4>
+            <p>Boshlang'ich 30% to'lov bilan 12 oygacha qulay muddatli to'lov imkoniyati.</p>
+        </div>
+    </section>
+
+  
+    <div class="modal" id="order-modal">
+        <div class="modal-content">
+            <a href="#models" class="close-btn">&times;</a>
+            <h2>Buyurtma berish</h2>
+            <p style="color: #a0a0ab; margin-bottom: 15px;">Ma'lumotlaringizni qoldiring, tez orada bog'lanamiz.</p>
+            <form action="#success-modal">
+                <input type="text" placeholder="Ismingiz" required>
+                <input type="tel" placeholder="Telefon raqamingiz (+998...)" required>
+                <input type="text" placeholder="Qaysi modelni tanladingiz?">
+                <button type="submit" class="btn" style="width: 100%; margin-top: 10px;">Yuborish</button>
+            </form>
+        </div>
+    </div>
+
+   
+    <div class="modal" id="success-modal">
+        <div class="modal-content" style="text-align: center;">
+            <a href="#models" class="close-btn">&times;</a>
+            <h2>Rahmat!</h2>
+            <p style="color: #fff; margin: 15px 0 25px;">Buyurtmangiz qabul qilindi. Menejerlarimiz tez orada siz bilan bog'lanishadi.</p>
+            <a href="#models" class="btn">Yopish</a>
+        </div>
+    </div>
+
+    <footer id="contact">
+        <p>&copy; 2026 MOTO-X Salon. Barcha huquqlar himoyalangan. | Tel: +998 90 123 45 67</p>
+    </footer>
+
+</body>
+</html>
